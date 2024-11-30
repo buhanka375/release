@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <script src="gallery.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Солодкий світ</h1>
+      <nav>
+        <a href="menu.html">Меню</a>
+        <a href="news.html">Новини та анонси</a>
+        <a href="contacts.html">Контакти</a>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img
+            src="https://cdn.pixabay.com/photo/2023/07/06/18/03/ai-generated-8110986_1280.png"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img
+            src="https://cdn.pixabay.com/photo/2024/02/26/20/09/cake-8598849_1280.jpg"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img
+            src="https://cdn.pixabay.com/photo/2023/03/28/15/08/ai-generated-7883452_1280.jpg"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img
+            src="https://cdn.pixabay.com/photo/2024/02/26/20/09/cake-8598850_1280.jpg"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img
+            src="https://cdn.pixabay.com/photo/2024/03/06/00/28/ai-generated-8615472_1280.jpg"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img
+            src="https://cdn.pixabay.com/photo/2023/01/25/12/23/desert-7743456_1280.jpg"
+          />
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Image text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail images -->
+        <div class="row">
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="https://cdn.pixabay.com/photo/2023/07/06/18/03/ai-generated-8110986_1280.png"
+              style="width: 100%"
+              onclick="currentSlide(1)"
+              alt="Королівський"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="https://cdn.pixabay.com/photo/2024/02/26/20/09/cake-8598849_1280.jpg"
+              style="width: 100%"
+              onclick="currentSlide(2)"
+              alt="Небесний"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="https://cdn.pixabay.com/photo/2023/03/28/15/08/ai-generated-7883452_1280.jpg"
+              style="width: 100%"
+              onclick="currentSlide(3)"
+              alt="Сакура"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="https://cdn.pixabay.com/photo/2024/02/26/20/09/cake-8598850_1280.jpg"
+              style="width: 100%"
+              onclick="currentSlide(4)"
+              alt="Northern Lights"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="https://cdn.pixabay.com/photo/2024/03/06/00/28/ai-generated-8615472_1280.jpg"
+              style="width: 100%"
+              onclick="currentSlide(5)"
+              alt="Nature and sunrise"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="https://cdn.pixabay.com/photo/2023/01/25/12/23/desert-7743456_1280.jpg"
+              style="width: 100%"
+              onclick="currentSlide(6)"
+              alt="Snowy Mountains"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="x-box">
+        <div class="x-box-top1">
+          <h2><a href="news">Новини та Анонси:</a></h2>
+        </div>
+
+        <div class="x-box-center">
+          <article>
+            <img
+              src="https://cdn.pixabay.com/photo/2024/10/06/07/48/ai-generated-9099289_1280.jpg"
+              width="300px"
+              height="200px"
+            />
+
+            <p class="title">
+              <a href="/news/2024/1/1305">Геловінські смаколики</a>
+            </p>
+
+            <p>
+              шоколадні цукерки "Гарбузик", пряничні та шоколадні подарункові
+              набори, тістечка, зефір в шокладі, страшенно смачні пряники та
+              багато і нших виробів ручної роботи.
+            </p>
+            <p class="date">29 октября 2024</p>
+          </article>
+
+          <article>
+            <img
+              src="https://media.istockphoto.com/id/1033058328/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BF%D0%B5%D0%BA%D0%B0%D1%80-%D1%82%D1%80%D0%B8%D0%BC%D0%B0%D1%94-%D1%82%D0%B5%D0%BF%D0%BB%D0%B8%D0%B9-%D1%85%D0%BB%D1%96%D0%B1.jpg?s=2048x2048&w=is&k=20&c=q48AvYW_KaZaertwcJ9MJRBczNudWmwhiJ9JYbx8m5Q="
+              width="300px"
+            />
+
+            <p class="title">
+              <a href="/news/2024/1/1304">Горіховий Спас! Хлібний Спас!</a>
+            </p>
+
+            <p>
+              Мигдаль та фундук в карамелі, тарталетки з горіхами, штрудель
+              горіховій, горішки з карамельною начинкою та волоським горіхом,
+              сухарики з горіхами, сирники з горіхами.
+            </p>
+            <p class="date">15 августа 2024</p>
+          </article>
+
+          <article>
+            <img
+              src="https://media.istockphoto.com/id/89912930/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BA%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D1%96-%D1%8F%D0%B1%D0%BB%D1%83%D0%BA%D0%B0.jpg?s=2048x2048&w=is&k=20&c=6tsNd-bLBN2aKgngFD2V3oRQACGYFrWKRSkMqU3ITxg="
+              width="300px"
+            />
+
+            <p class="title">
+              <a href="/news/2024/1/1303">Яблучний Спас!</a>
+            </p>
+
+            <p>
+              Млинці з яблуком, тістечко "Яблуко", тортіно Ді Меле з яблуком та
+              карамеллю, штрудель з горіхом та яблуком, слойка та пиріжки з
+              яблуком, пиріг Польский з яблуком та меренгою, Крученики з
+              яблуком, шарлотка яблучна та багато інших смаколиків в O'Cacao!
+            </p>
+            <p class="date">06 августа 2024</p>
+          </article>
+        </div>
+        <div class="x-box-bottom1">
+          <div class="x-box-bottom2"><div class="x-box-bottom3"></div></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        +38 (095) 23 472 57 m:+38 (061) 22 444 66 Viber: +38 (095) 23 472 57
+      </p>
+      <p>
+        Запоріжжя, вул. Олександрівська, 29 / вул. Тургенєва, 27.відчинені з
+        09:00 до 19:00.
+      </p>
+      <p>Контактна інформація та мапа проїзду до нас</p>
+    </footer>
+
+    <div class="modal">
+      <div class="box">
+        <button id="modal-close">X</button>
+        <img src="" id="modal-img" alt="" />
+      </div>
+    </div>
+
+    <button class="btn-up" id="btn-up">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+        <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path
+          d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+        />
+      </svg>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
